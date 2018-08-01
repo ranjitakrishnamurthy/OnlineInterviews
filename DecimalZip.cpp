@@ -12,11 +12,11 @@ int solution (int A, int B)
     int max_element = std::max(first_item.size(),second_item.size());
     for(int index=0;index<max_element;index++)
     {
-        if(index<first_item.size())
+        if((size_t)index<first_item.size())
         {
             result_string += first_item.at(index);
         }
-        if(index<second_item.size())
+        if((size_t)index<second_item.size())
         {
             result_string += second_item.at(index);
         }
